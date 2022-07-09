@@ -1,10 +1,19 @@
 .advantage {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 30px;
 
+  &__item {
+    width: 100%;
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+
   &__area {
-    width: 270px;
     height: 120px;
     background-color: var(--secondary-bg-color);
     margin-bottom: 30px;
@@ -19,12 +28,17 @@
   }
 
   &__title {
-    margin-bottom: 12px;
-
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
     color: var(--title-text-color);
     font-weight: bold;
     font-size: 14px;
     line-height: 1.1;
     text-transform: uppercase;
-  }
+
+    @include tablet {
+      justify-content: start;
+    }
+  } 
 }

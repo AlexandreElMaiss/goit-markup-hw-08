@@ -1,4 +1,10 @@
 .our-features {
+  display: none;
+}
+
+@include desktop {
+.our-features {
+  display: flex;
   padding-top: 0px;
 }
 
@@ -26,4 +32,5 @@
     left: 0;
     width: 100%;
   }
+}
 }
