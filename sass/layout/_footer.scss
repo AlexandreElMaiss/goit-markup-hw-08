@@ -8,9 +8,18 @@
   }
 
   &__tablet {
+    margin-bottom: 60px;
     @include tablet {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 60px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 60px;
+    @include tablet {
+    margin-bottom: 0;
     }
   }
 
@@ -19,15 +28,12 @@
     justify-content: center;
     margin-bottom: 20px;
     @include desktop {
-        justify-content: start;
-      }
+    justify-content: start;
+    }
   }
 }
 
-
-
 .contacts {
-  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   gap: 8px;

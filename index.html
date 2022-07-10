@@ -64,13 +64,12 @@
 
     <div class="mob-menu is-hidden">
       <div class="container">
-      <button type="button" class="menu-close-btn">
-        <svg width="40" height="40">
-          <use href="./images/icons.svg#icon-close-menu"></use>
-        </svg>
-      </button>
-
-      
+      <div class="mob-menu__top">
+        <button type="button" class="menu-close-btn">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-close-menu"></use>
+          </svg>
+        </button>
         <ul class="mob-nav">
         <li class="mob-nav__item">
           <a href="./index.html" class="mob-nav__link current">Студия</a>
@@ -84,9 +83,9 @@
           <a href="" class="mob-nav__link">Контакты</a>
         </li>
         </ul>
+      </div>
       
-
-      
+      <div class="mob-menu__bot">
         <ul class="mob-contacts">
           <li class="mob-contacts__item">
             <a href="tel:+380961111111" class="mob-contacts__phone">
@@ -107,6 +106,7 @@
           <li><a href="Facebook" class="mob-socials__link">Facebook</a>
           <li><a href="LinkedIn" class="mob-socials__link">LinkedIn</a></li>
         </ul>
+      </div>
       
       </div>
     </div>
@@ -513,7 +513,7 @@
   <footer class="end-section">
     <div class="container footer">
       <div class="footer__tablet">
-        <div>
+        <div class="footer__nav">
           <a href="./index.html" class="footer__logo logo">Web<span class="logo--light">Studio</span></a>
         
           <address>
