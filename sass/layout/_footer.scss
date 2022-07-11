@@ -14,6 +14,9 @@
     justify-content: space-evenly;
     margin-bottom: 60px;
     }
+    @include desktop {
+    margin-bottom: 0;
+    }
   }
 
   &__nav {
